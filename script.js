@@ -4,7 +4,7 @@ const botao = document.getElementById("btEnviar");
 botao.addEventListener("click", function() {
     alert("Formulário enviado!");
     
-});
+
 
 
     const nome = document.getElementById("nome").value;
@@ -12,3 +12,4 @@ botao.addEventListener("click", function() {
     alert(`Formulário enviado!`);
 
 
+});
