@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="pt-Br">
+
 <head>
     <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
     <link rel="stylesheet" href="estilo.css">
@@ -7,6 +8,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Formulário</title>
 </head>
+
 <body>
     <h1>Formulário</h1>
 
@@ -16,9 +18,29 @@
 
         <label for="email">E-mail:</label><br>
         <input type="email" id="email" name="email" required><br><br>
+        <label for="idade">Idade:</label><br>
+
+        <input type="range" id="idade" name="idade" min="0" max="100" value="18" />
+
+        <span id="idadeValor">18</span> anos
+
+
+        <br><br>
+        <label>Sexo:</label><br>
+        <div class="sexo-container">
+            <input type="radio" id="masc" name="sexo" value="masculino">
+            <label for="masc" class="botao-sexo">Masculino</label>
+
+            <input type="radio" id="fem" name="sexo" value="feminino">
+            <label for="fem" class="botao-sexo">Feminino</label>
+        </div>
+
+        <br><br>
+
 
         <button id="btEnviar">Enviar</button>
     </form>
     <script src="script.js"></script>
 </body>
+
 </html>
