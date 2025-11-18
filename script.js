@@ -1,7 +1,7 @@
 const botao = document.getElementById("btEnviar");
 
 botao.addEventListener("click", function (event) {
-    event.preventDefault(); 
+   
 
     const nome = document.getElementById("nome").value;
     const email = document.getElementById("email").value;

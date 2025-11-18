@@ -1,24 +1,23 @@
-/* Centraliza tudo na página */
 body {
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
 }
 
-/* Título */
+
 h1 {
     text-align: center;
     color: #333;
 }
 
-/* Labels */
+
 label {
     font-weight: bold;
     margin-bottom: 6px;
     display: block;
 }
 
-/* Campos de texto */
+
 input[type="text"],
 input[type="email"],
 textarea {
@@ -30,11 +29,10 @@ textarea {
     margin-bottom: 15px;
 }
 
-/* Botão */
 button {
     width: 100%;
     padding: 12px;
-    background-color: #0066cc;
+    background-color: #e00c0c;
     color: white;
     font-size: 1.1rem;
     border: none;
@@ -44,5 +42,37 @@ button {
 }
 
 button:hover {
-    background-color: #004c99;
+    background-color: #e00c0c;
+}
+
+.sexo-container {
+    display: flex;
+    gap: 10px;
+}
+
+
+.sexo-container input[type="radio"] {
+    display: none;
+}
+
+
+.botao-sexo {
+    padding: 10px 20px;
+    border: 2px solid #444;
+    border-radius: 8px;
+    cursor: pointer;
+    user-select: none;
+    transition: 0.2s;
+}
+
+
+.botao-sexo:hover {
+    background-color: #e00c0c;
+}
+
+
+.sexo-container input[type="radio"]:checked+.botao-sexo {
+    background-color: #e00c0c;
+    color: white;
+    border-color: #e00c0c;
 }

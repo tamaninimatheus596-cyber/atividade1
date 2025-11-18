@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Resultado do Formulário</title>
+    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
+</head>
+<body>
+
+    <h1>Resultado do Formulário</h1>
+
+    <p><strong>Nome:</strong> <span id="rNome"></span></p>
+    <p><strong>E-mail:</strong> <span id="rEmail"></span></p>
+    <p><strong>Idade:</strong> <span id="rIdade"></span></p>
+    <p><strong>Sexo:</strong> <span id="rSexo"></span></p>
+
+    <script>
+        const params = new URLSearchParams(window.location.search);
+
+        document.getElementById("rNome").textContent = params.get("nome");
+        document.getElementById("rEmail").textContent = params.get("email");
+        document.getElementById("rIdade").textContent = params.get("idade");
+        document.getElementById("rSexo").textContent = params.get("sexo");
+    </script>
+
+</body>
+</html>
