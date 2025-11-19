@@ -1,13 +1,20 @@
+
 body {
     max-width: 500px;
     margin: 40px auto;
     padding: 20px;
+    background-color: #121212;      
+    color: #e0e0e0;                
+    border: 2px solid #333;
+    border-radius: 10px;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
 }
-
 
 h1 {
     text-align: center;
-    color: #333;
+    color: #ffffff;
+    margin-bottom: 30px;
 }
 
 
@@ -22,34 +29,58 @@ input[type="text"],
 input[type="email"],
 textarea {
     width: 100%;
-    padding: 10px;
-    border-radius: 6px;
-    border: 1px solid #ccc;
-    font-size: 1rem;
+    padding: 12px;
     margin-bottom: 15px;
+    border: 2px solid #444;
+    border-radius: 6px;
+    font-size: 1rem;
+    background-color: #1f1f1f;   
+    color: #fff;                 
+    box-sizing: border-box;
 }
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+textarea:focus {
+    border-color: #e00c0c;      
+    outline: none;
+}
+
+
+#idade {
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 5px;
+}
+
+#idadeValor {
+    color: #e0e0e0;
+}
+
 
 button {
     width: 100%;
     padding: 12px;
+    border: 2px solid #e00c0c;
+    border-radius: 6px;
+    margin-top: 10px;
     background-color: #e00c0c;
     color: white;
     font-size: 1.1rem;
-    border: none;
-    border-radius: 6px;
     cursor: pointer;
-    margin-top: 10px;
+    box-sizing: border-box;
 }
 
 button:hover {
-    background-color: #e00c0c;
+    background-color: #b30909;
 }
+
 
 .sexo-container {
     display: flex;
     gap: 10px;
+    margin-top: 10px;
 }
-
 
 .sexo-container input[type="radio"] {
     display: none;
@@ -58,20 +89,22 @@ button:hover {
 
 .botao-sexo {
     padding: 10px 20px;
-    border: 2px solid #444;
+    border: 2px solid #666;
     border-radius: 8px;
     cursor: pointer;
     user-select: none;
     transition: 0.2s;
+    background-color: #1f1f1f;
+    color: #ccc;
+    box-sizing: border-box;
 }
-
 
 .botao-sexo:hover {
     background-color: #e00c0c;
+    color: white;
 }
 
-
-.sexo-container input[type="radio"]:checked+.botao-sexo {
+.sexo-container input[type="radio"]:checked + .botao-sexo {
     background-color: #e00c0c;
     color: white;
     border-color: #e00c0c;

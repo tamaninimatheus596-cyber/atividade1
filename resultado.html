@@ -1,26 +1,48 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+    <link rel="stylesheet" href="estilo.css">
+
 <head>
     <meta charset="UTF-8">
-    <title>Resultado do Formulário</title>
-    <link rel="stylesheet" href="https://cdn.simplecss.org/simple.css">
-</head>
-<body>
+    <title>Resultado</title>
 
+    <style>
+        body {
+            background: #121212;
+            color: #fff;
+            text-align: center;
+            padding-top: 40px;
+            font-family: Arial;
+        }
+
+        img {
+            width: 150px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    
     <h1>Resultado do Formulário</h1>
 
-    <p><strong>Nome:</strong> <span id="rNome"></span></p>
-    <p><strong>E-mail:</strong> <span id="rEmail"></span></p>
-    <p><strong>Idade:</strong> <span id="rIdade"></span></p>
-    <p><strong>Sexo:</strong> <span id="rSexo"></span></p>
+    <p><strong>Nome:</strong> <span id="nome"></span></p>
+    <p><strong>Email:</strong> <span id="email"></span></p>
+    <p><strong>Idade:</strong> <span id="idade"></span></p>
+    <p><strong>Sexo:</strong> <span id="sexo"></span></p>
+    <p><strong>Time:</strong> <span id="time"></span></p>
+
 
     <script>
         const params = new URLSearchParams(window.location.search);
 
-        document.getElementById("rNome").textContent = params.get("nome");
-        document.getElementById("rEmail").textContent = params.get("email");
-        document.getElementById("rIdade").textContent = params.get("idade");
-        document.getElementById("rSexo").textContent = params.get("sexo");
+        document.getElementById("nome").textContent = params.get("nome");
+        document.getElementById("email").textContent = params.get("email");
+        document.getElementById("idade").textContent = params.get("idade");
+        document.getElementById("sexo").textContent = params.get("sexo");
+        document.getElementById("time").textContent = params.get("time");
+
+     
     </script>
 
 </body>
